@@ -1,0 +1,19 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+
+RewriteRule ^css/(.*) Public/css/$1
+RewriteRule ^js/(.*) Public/js/$1
+RewriteRule ^images/(.*) Public/images/$1
+
+#RewriteRule ^js Public/js [NC,L,QSA]
+
+#RewriteRule ^images/(.*)$ Public/images/$1 [R=301,L]
+#RewriteRule ^css/(.*)$ Public/css/$1 [R=301,L]
+#RewriteRule ^js/(.*)$ Public/js/$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+

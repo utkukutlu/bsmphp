@@ -1,0 +1,14 @@
+[
+  {
+    "code": "tr",
+    "title": "Türkçe",
+    "flag": "/images/flags/trflag.png",
+    "file": "tr.json"
+  },
+  {
+    "code": "en",
+    "title": "English",
+    "flag": "/images/flags/ukflag.png",
+    "file": "en.json"
+  }
+]
